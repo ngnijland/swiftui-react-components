@@ -1,0 +1,16 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+
+.leading {
+  align-items: flex-start;
+}
+
+.center {
+  align-items: center;
+}
+
+.trailing {
+  align-items: flex-end;
+}
