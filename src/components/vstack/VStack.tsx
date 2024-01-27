@@ -1,6 +1,6 @@
 import classNames from "classnames";
 
-import { HorizontalAlignment } from "../types";
+import type { HorizontalAlignment } from "../types";
 
 import styles from "./vstack.module.css";
 
