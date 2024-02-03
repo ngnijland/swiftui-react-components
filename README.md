@@ -4,6 +4,8 @@ I really like the structure and workings of the default component set that Apple
 
 I started adding all components that are used in this tutorial: https://developer.apple.com/tutorials/swiftui/creating-and-combining-views
 
+The page is delpoyed to GitHub Pages [here](https://ngnijland.github.io/swiftui-react-components/).
+
 ## TODO
 
 **Components**
