@@ -1,14 +1,15 @@
 import classNames from "classnames";
 
-import type { HorizontalAlignment } from "../types";
+import { getPaddingClasses, getPaddingStyles } from "../utils";
 
 import styles from "./vstack.module.css";
-import commonStyles from "../styles.module.css";
+
+import type { HorizontalAlignment, Padding } from "../types";
 
 interface VStackProps {
   alignment?: HorizontalAlignment;
   children: React.ReactNode;
-  padding: number | true;
+  padding?: Padding;
 }
 
 export function VStack({
@@ -18,10 +19,14 @@ export function VStack({
 }: VStackProps) {
   return (
     <div
-      className={classNames(styles.root, styles[alignment], {
-        [commonStyles.padding]: typeof padding === "boolean",
-      })}
-      style={{ ...(typeof padding === "number" ? { padding } : {}) }}
+      className={classNames(
+        styles.root,
+        styles[alignment],
+        ...(padding ? getPaddingClasses(padding) : [])
+      )}
+      style={{
+        ...(padding ? getPaddingStyles(padding) : {}),
+      }}
     >
       {children}
     </div>
