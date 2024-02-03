@@ -31,7 +31,23 @@ export type Font =
   | "headline"
   | "body"
   | "callout"
-  | "subhead"
+  | "subheadline"
   | "footnote"
   | "caption1"
   | "caption2";
+
+export type Color =
+  | "primary"
+  | "secondary"
+  | "red"
+  | "orange"
+  | "yellow"
+  | "green"
+  | "mint"
+  | "teal"
+  | "cyan"
+  | "blue"
+  | "indigo"
+  | "purple"
+  | "pink"
+  | "brown";

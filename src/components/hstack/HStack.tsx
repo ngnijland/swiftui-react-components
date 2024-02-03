@@ -2,9 +2,9 @@ import classNames from "classnames";
 
 import { getPaddingClasses, getPaddingStyles } from "../utils";
 
-import type { Padding, VerticalAlignment } from "../types";
-
 import styles from "./hstack.module.css";
+
+import type { Padding, VerticalAlignment } from "../types";
 
 interface HStackProps {
   alignment?: VerticalAlignment;

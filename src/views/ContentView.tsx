@@ -1,20 +1,30 @@
-import { View } from "../components/view/View";
-import { VStack } from "../components/vstack/VStack";
+import { Divider } from "../components/divider/Divider";
 import { HStack } from "../components/hstack/HStack";
 import { Spacer } from "../components/spacer/Spacer";
 import { Text } from "../components/text/Text";
+import { VStack } from "../components/vstack/VStack";
+import { View } from "../components/view/View";
 
 export function ContentView() {
   return (
     <View>
       <VStack alignment="leading" padding>
-        <Text font="largeTitle">Turtle Rock</Text>
+        <Text as="h1" font="largeTitle">
+          Turtle Rock
+        </Text>
         <HStack alignment="top">
-          <Text>Joshua Tree National Park</Text>
+          <Text font="subheadline" foregroundColor="secondary">
+            Joshua Tree National Park
+          </Text>
           <Spacer />
-          <Text>California</Text>
+          <Text font="subheadline" foregroundColor="secondary">
+            California
+          </Text>
         </HStack>
-        <Text font="title2">About Turtle Rock</Text>
+        <Divider />
+        <Text as="h2" font="title2">
+          About Turtle Rock
+        </Text>
         <Text>
           Suscipit inceptos est felis purus aenean aliquet adipiscing diam
           venenatis, augue nibh duis neque aliquam tellus condimentum sagittis
