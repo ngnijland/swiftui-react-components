@@ -2,6 +2,8 @@ export type HorizontalAlignment = "leading" | "center" | "trailing";
 
 export type VerticalAlignment = "top" | "center" | "bottom";
 
+export type RemValue = `${number}rem`;
+
 export type Edge =
   | "top"
   | "right"
@@ -21,4 +23,15 @@ export type Padding =
       length?: number;
     };
 
-export type RemValue = `${number}rem`;
+export type Font =
+  | "largeTitle"
+  | "title"
+  | "title2"
+  | "title3"
+  | "headline"
+  | "body"
+  | "callout"
+  | "subhead"
+  | "footnote"
+  | "caption1"
+  | "caption2";
