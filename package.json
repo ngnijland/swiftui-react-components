@@ -2,6 +2,7 @@
   "name": "swiftui-react-components",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ngnijland.github.io/swiftui-react-components",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
